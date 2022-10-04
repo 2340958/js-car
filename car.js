@@ -37,7 +37,7 @@ class Car{
         this.y-=this.speed;
     }
     draw(ctx){
-        ctx.beginPAth();
+        ctx.beginPath();
         ctx.rect(
             this.x-this.width/2,
             this.y-this.height/2,
