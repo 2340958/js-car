@@ -10,12 +10,12 @@ class Car{
         this.maxSpeed= 3;
         this.friction=0.05;
 
+        this.controls = new Controls();
     }
     update(){
         if(this.controls.forward){
             this.y+=this.acceleration;
         }
-
         if(this.controls.reverse){
             this.y-=this.acceleration;
         }
